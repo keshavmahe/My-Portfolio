@@ -11,6 +11,11 @@
         <nav class="navbar">
             <div class="container">
                 <h1>Keshav Maheshwari</h1>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <ul>
                     <li><a href="#about"  >About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -131,5 +136,13 @@
             <p>&copy; 2024 Keshav Maheshwari. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar ul');
+            const hamburger = document.querySelector('.hamburger');
+            navbar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
